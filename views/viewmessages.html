@@ -1,0 +1,12 @@
+<div id='main'>
+<hr/>
+<p>Thank you, <%= name %> for your message <%= message %></p>
+<table><% messages.forEach(function(message)
+{%>
+	<tr><td>
+			<p><%= message.message %>: by <b> <%= message.name %></b></p>
+			<p><%= new Date(message.created).toDateString() %>
+			</td>
+	</tr>
+<% }); %></table>
+</div>

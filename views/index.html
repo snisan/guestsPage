@@ -1,0 +1,22 @@
+<div id='main'>
+<form method='POST' action='<%= postpath %>'>
+<table width=90% border=0>
+	<tr>
+		<p>Hello, please leave a message.</p>
+	</tr>
+	<tr>
+		<td width=10%><label>Name:</label></td>
+		<td width=80%><input type='text' name='name' value='<%= message.name %>'/></td>
+	</tr>
+	<tr>
+		<td><label>Message:</label></td>
+		<td><textarea row=5 col=40 name='message'>
+	<%= message.message %>
+	</textarea></td>
+	</tr>
+	<tr>
+		<td><input type='submit' value='send' class='button'/></td></tr>
+	</table>
+</form>
+<hr/>
+</div>
